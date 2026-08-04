@@ -1,7 +1,8 @@
 /* CONTENIDO DE LA DEMO — edita solo este archivo. */
 window.DEMO = {
   marca: {
-    nombre: "UrbanKicks", eslogan: "Sneakers & streetwear", whatsapp: "51999777888", moneda: "S/",
+    nombre: "UrbanKicks", eslogan: "Sneakers & streetwear", whatsapp: "51999777888", moneda: "S/", email: "hola@urbankicks.com",
+    redes: { instagram: "https://instagram.com/", facebook: "https://facebook.com/", tiktok: "https://tiktok.com/", x: "https://x.com/" },
     colores: { primario: "#c2f542", secundario: "#42f5c8", acento: "#f542a1", fondo: "#0b0b0d", superficie: "#16161a", texto: "#f5f6f2", textoSuave: "#adaeb5" }
   },
   secciones: [
@@ -12,15 +13,16 @@ window.DEMO = {
       notas: ["100% originales", "Envío 24-48h", "Pago contra entrega"] },
     { tipo: "logos", titulo: "Las marcas que amas", marcas: ["Nova", "StreetLab", "Kixx", "Fresh", "MoveOn", "Prime"] },
     { tipo: "products", id: "tienda", menu: "Tienda", etiqueta: "Lo más vendido", titulo: "Encuentra tu par", columnas: 4,
+      buscador: true, categorias: true, pagos: ["Visa", "Mastercard", "Yape", "Plin", "Contra entrega"],
       items: [
-        { nombre: "Runner Neo", precio: 249, tag: "-20%", img: "https://loremflickr.com/500/500/sneakers?lock=11" },
-        { nombre: "Street Air Max", precio: 329, tag: "Top", img: "https://loremflickr.com/500/500/sneaker,shoe?lock=12" },
-        { nombre: "Classic Retro", precio: 199, img: "https://loremflickr.com/500/500/shoes?lock=13" },
-        { nombre: "Hoodie Oversize", precio: 129, tag: "Nuevo", img: "https://loremflickr.com/500/500/hoodie?lock=14" },
-        { nombre: "Court Low", precio: 219, img: "https://loremflickr.com/500/500/sneakers,white?lock=15" },
-        { nombre: "Cargo Pants", precio: 149, img: "https://loremflickr.com/500/500/streetwear,pants?lock=16" },
-        { nombre: "Skate Deluxe", precio: 189, tag: "Hot", img: "https://loremflickr.com/500/500/skate,shoes?lock=17" },
-        { nombre: "Gorra Urban", precio: 59, img: "https://loremflickr.com/500/500/cap,streetwear?lock=18" }
+        { nombre: "Runner Neo", precio: 249, tag: "-20%", cat: "Zapatillas", img: "https://loremflickr.com/500/500/sneakers?lock=11" },
+        { nombre: "Street Air Max", precio: 329, tag: "Top", cat: "Zapatillas", img: "https://loremflickr.com/500/500/sneaker,shoe?lock=12" },
+        { nombre: "Classic Retro", precio: 199, cat: "Zapatillas", img: "https://loremflickr.com/500/500/shoes?lock=13" },
+        { nombre: "Hoodie Oversize", precio: 129, tag: "Nuevo", cat: "Ropa", img: "https://loremflickr.com/500/500/hoodie?lock=14" },
+        { nombre: "Court Low", precio: 219, cat: "Zapatillas", img: "https://loremflickr.com/500/500/sneakers,white?lock=15" },
+        { nombre: "Cargo Pants", precio: 149, cat: "Ropa", img: "https://loremflickr.com/500/500/streetwear,pants?lock=16" },
+        { nombre: "Skate Deluxe", precio: 189, tag: "Hot", cat: "Zapatillas", img: "https://loremflickr.com/500/500/skate,shoes?lock=17" },
+        { nombre: "Gorra Urban", precio: 59, cat: "Accesorios", img: "https://loremflickr.com/500/500/cap,streetwear?lock=18" }
       ] },
     { tipo: "stats", items: [ { numero: "+15K", texto: "Clientes" }, { numero: "24h", texto: "Envío Lima" }, { numero: "100%", texto: "Originales" }, { numero: "4.8★", texto: "Valoración" } ] },
     { tipo: "split", etiqueta: "Compra sin miedo", titulo: "Envíos rápidos y pagos seguros", alt: true,
